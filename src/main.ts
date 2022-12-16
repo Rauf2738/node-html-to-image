@@ -14,7 +14,7 @@ export async function nodeHtmlToImage(options: Options) {
     selector,
     type,
     quality,
-    puppeteerArgs = {},
+    puppeteerArgs = { args: ["--no-sandbox"] },
     puppeteer = undefined,
   } = options;
 
